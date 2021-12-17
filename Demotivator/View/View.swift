@@ -36,7 +36,8 @@ class CustomView: UIView {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Привет, мой друг✌🏼\nТвоё фото будет в рамке сверху ⇧\nА надпись здесь.\n Поехали🚀"
+        label.text = "Hello my friend✌🏼\n Photo will be framed on top ⇧\nYour the inscription will be here.\n Let's go 🚀"
+
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0

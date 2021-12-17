@@ -94,7 +94,7 @@ class MainViewController: UIViewController {
                                        preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .default))
         } else {
-            let ac = UIAlertController(title: "Сохранено", message: "Ваш демотиватор был успешно сохранен в фото-библиотеку", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Saved", message: "Your demotivator has been successfully saved to your photo library", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .default))
             present(ac, animated: true)
         }
@@ -229,8 +229,8 @@ class MainViewController: UIViewController {
     
     // AlertController
     private func setAlertController() {
-        let alertController = UIAlertController(title: "Ваша цитата",
-                                                message: "•Не забудь добавить фильтр к фото\n•Задать интенсивность\n(с помощью бегунка в нижней части экрана)\nУдачи",
+        let alertController = UIAlertController(title: "Your quote",
+                                                message: "•Don't forget to add a filter to your photo\n•Set intensity\n(using the slider at the bottom of the screen)\nGood luck",
                                                 preferredStyle: .alert)
         
         let doneAction = UIAlertAction(title: "Ok", style: .default, handler: { (alert: UIAlertAction) in
@@ -243,11 +243,11 @@ class MainViewController: UIViewController {
         })
         
         alertController.addTextField { textField in
-            textField.placeholder = "Введите своё описание."
+            textField.placeholder = "Enter your description."
         }
         
         alertController.addAction(doneAction)
-        alertController.addAction(UIAlertAction(title: "Отменить", style: .default))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default))
         
         self.present(alertController, animated: true)
     }
